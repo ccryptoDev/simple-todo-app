@@ -33,46 +33,55 @@ This is a simple **Todo List Application** built using **Node.js**, **Next.js**,
    npm install
    ```
 
-3. **Create the SQLite database:**
+3. **Create the SQLite database**:
 
-   When you start the backend for the first time, the SQLite database (tasks.db) will be automatically generated in the backend/ folder.
+   When you start the backend for the first time, the SQLite database (`tasks.db`) will be automatically generated in the `backend/` folder. No additional setup is required for the database—just ensure that the backend is running, and it will create the database file for you.
 
-4. **Configure environment variables:**
 
-   Just use the environment files which exists currently. If needed, you may change API_URL & PORT as you want.
+4. **Configure environment variables**:
 
-5. **Start the development server:**
+   Use the existing environment files that are included in the project. If necessary, you can modify the following variables:
 
-- Running both the frontend and backend concurrently from the root directory:
+   - **`API_URL`**: Set backend URL (`.env` in the root).
+   - **`PORT`**: Change the port number on which the backend server will run (`/backend/.env`).
 
-  ```bash
-  npm run dev
-  ```
-  
-- Or alternatively, running frontend and backend separatelly
+   Ensure that any changes made to these variables are saved in the appropriate environment file.
 
-  **To start the frontend (from the root directory):**
 
-  ```bash
-  npm run frontend
-  ```
+5. **Start the development server**:
 
-  **To start the backend (from the backend directory):**
+   You have two options to run the application:
 
-  ```bash
-  npm run dev
-  ```
+   - **To run both the frontend and backend concurrently from the root directory**, execute:
+   
+     ```bash
+     npm run dev
+     ```
 
-6. **Open the app in your browser:**
+   - **Alternatively, run the frontend and backend separately**:
 
-- **frontend:**
+     - **To start the frontend** (from the root directory):
+       ```bash
+       npm run frontend
+       ```
 
-  ```bash
-  http://localhost:3000
-  ```
+     - **To start the backend** (from the backend directory):
+       ```bash
+       npm run dev
+       ```
 
-- **backend:**
+   Make sure to wait for both servers to start before accessing the application.
 
-  ```bash
-  http://localhost:5000/graphql
-  ```
+6. **Open the app in your browser**:
+
+   Once both the frontend and backend servers are running, you can access the application using the following URLs:
+
+   - **Frontend**:  
+     Open your browser and go to:  
+     [http://localhost:3000](http://localhost:3000)
+
+   - **Backend**:  
+     For the GraphQL API, navigate to:  
+     [http://localhost:5000/graphql](http://localhost:5000/graphql)
+
+   Ensure that the both are running to access these links successfully.
