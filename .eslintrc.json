@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": true,
+    "es6": true 
+  },
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-console": "off", 
+    "@typescript-eslint/no-require-imports": "off" 
+  }
+}
